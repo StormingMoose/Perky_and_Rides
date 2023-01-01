@@ -57,11 +57,8 @@ Servo myservo;
 
                       //Enter your WiFi SSID and PASSWORD     <<*******************************************************
 
-//const char* ssid = "ESP";               // different name and password?
-//const char* password = "network1";                    // password length minimum 8 char
-
-const char* ssid = "aliens";               // different name and password?
-const char* password = "aaaaaaaa";                    // password length minimum 8 char
+const char* ssid = "Your Places";               // different name and password?
+const char* password = "*********";                    // password length minimum 8 char
 
 WebServer server(80);  // normal webserver port
 
