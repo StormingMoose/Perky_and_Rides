@@ -18,7 +18,7 @@ int PWM_Speed = 250; // initial speed PWM duty cycle
 int pos = 90;        // starting head position for servo 
 
                      // wired motor connections
-#define MOTORLR_PWM 26 //  Speed
+#define MOTORLR_PWM 26 //  Speed         // setup the motors to the correct wired situation by changing these numbers not moving the wires
 #define MOTORLR_DIR 25 //  Direction
 #define MOTORRR_PWM 33 //  Speed
 #define MOTORRR_DIR 32 //  Direction
@@ -80,7 +80,7 @@ void setup(void) {
   ledcSetup(ledChannelRF_PWM, freq, resolution);
   ledcSetup(ledChannelRF_DIR, freq, resolution);
 
-  pinMode( MOTORLR_DIR, OUTPUT );                            // setup the motors to the correct wired situation by changing these numbers not moving the wires
+  pinMode( MOTORLR_DIR, OUTPUT );                          
   pinMode( MOTORLR_PWM, OUTPUT );
   pinMode( MOTORRR_DIR, OUTPUT );
   pinMode( MOTORRR_PWM, OUTPUT );
@@ -147,8 +147,8 @@ void setup(void) {
 
 void loop(void) {
   server.handleClient();
-
 }
+
 void handle_NotFound () {
 }
 
