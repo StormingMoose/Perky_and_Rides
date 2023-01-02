@@ -19,7 +19,7 @@ Another cellphone will be dedicated to viewing the VR.  Android phones work.  Ap
 
 Flash to your ESP32 with the Arduino IDE.
 
-Pick from Tracked Vehicles using two motors, or meccanum vehicles using four motors, or coming soon, wheeled road vehicles.
+Pick from Tracked Vehicles using two motors, or meccanum vehicles using four motors, or wheeled road vehicles.  More are in development.
 
 
 Have fun.
