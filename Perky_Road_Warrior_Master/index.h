@@ -70,7 +70,7 @@ setInterval(() => {
         if(buttonIndex == 1){ toggle("FO");}                   //  lights off and on
         if(buttonIndex == 2){ toggle("Flon");}
       
-        if(buttonIndex == 4){ toggle("off");}                 // stop the motors
+        if(buttonIndex == 4){ toggle("off"); shifted = false; shiftedfast = false;}                 // stop the motors
         if(buttonIndex == 5){ paused = true;}                 // switch to head movement  
           else { paused = false}
 
