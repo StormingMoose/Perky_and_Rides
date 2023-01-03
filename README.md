@@ -3,12 +3,15 @@ Code for Perky's robot head's transportation options.  Tracked, Mecanum and Whee
 
 Perky consists of a StereoPi camera mounted on a Meccanoid headset.  The headset can be turned left and right and has lights that can be turned on and off.
 
-Bluetooth control of a L9110S motor driver equiped tracked vehicle.
+Bluetooth control of a L9110S motor driver equipped tracked vehicle and another meccanum wheeled vehicle as well.
+Bluetooth control of a L298N motor driver equipped 2 motor wheeled Road Warrior. ;)
 
-Reguires a handheld BT VR Chip game controller. The one with android ios switch on the side.
+Reguires a handheld BT VR Chip game controller. The one with android/ios switch on the side.
 
 This software creates wepages on your local wifi network to control the vehicles using the joystick and buttons on the VR Chip
 controller in various ways.
+
+The Road Warrior uses an Access Point at 192.168.4.1
 
 The controller is linked to your android phone in the usual bluetooth manner and then the webpage from the vehicle is loaded in your browser.
 I use an Android app called Fing to find the ip addresses of the Stereopi and vehicle.  One cell phone is required for the bluetooth connection.
