@@ -71,19 +71,14 @@ setInterval(() => {
         if(buttonIndex == 2){ toggle("Flon");}
       
         if(buttonIndex == 4){ toggle("off"); shifted = false; shiftedfast = false;}                 // stop the motors
-        if(buttonIndex == 5){ paused = true;}                 // switch to head movement  
-          else { paused = false}
-
-        if(buttonIndex == 5 && myGamepad.axes[1] > 0.5){toggle("HL");}   // turn head lefter
-        if(buttonIndex == 5 && myGamepad.axes[1] < -0.5){toggle("HR");}  // turn head righter 
-        
-        // button is pressed; indicate this on the page.  Uncomment the next two lines, very handy for debugging  and identifying the buttons.
-
-        //  document.body.style.backgroundColor = "blue" ;
-        //  document.body.innerHTML += `<h1>Button ${buttonIndex} is pressed  </h1>`;
-      
+        if(buttonIndex == 5){                                   
+                            if( myGamepad.axes[1] < 0.2 && myGamepad.axes[1] > -0.2){ paused = false;}   // keep steering the car
+                            else {if( myGamepad.axes[1] > 0.5){toggle("HL"); paused = true;}  // turn head lefter
+                                     else {toggle("HR"); paused = true;}          // turn head righter 
+                                 }                 
+                            }     
       }
-    })
+    }
    
    
   }
