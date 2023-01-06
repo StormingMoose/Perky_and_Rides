@@ -17,7 +17,7 @@ window.addEventListener('gamepadconnected', (event) => {
   gamepadIndex = event.gamepad.index;
 });
 
-  let paused = true;
+  let paused = false;
   let shifted = false;
   let shiftedfast = false;
   let Forward = true;
