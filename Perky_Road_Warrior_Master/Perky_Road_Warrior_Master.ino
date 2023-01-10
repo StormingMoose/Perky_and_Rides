@@ -6,6 +6,8 @@
    21-11-2018
 
    Many thanks to Rui Santos and his crew over at randomnerdturtorials.com
+   https://gabrielromualdo.com/articles/2020-12-15-how-to-use-the-html5-gamepad-api was very helpful in the bluetooth area.
+   
 */
 // Head lights stuff
 
