@@ -4,6 +4,7 @@
   https://circuits4you.com/2018/11/21/esp32-access-point-station-ap-html-web-server-arduino/
    was particularily informative
     many thanks go to Rui Santos and his crew at RandomNerdTutorials.com
+     https://gabrielromualdo.com/articles/2020-12-15-how-to-use-the-html5-gamepad-api was very helpful in the bluetooth area.
 
 */
 #include "MeccaBrain.h"        // Only used for meccano headset lights, had to HACK the 5 bottom lines of the .cpp file, added values to the arrays, shrug.
